@@ -1,0 +1,51 @@
+.offline-section {
+  @include flex-container;
+  background-color: $background-color-bl;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 80px;
+    gap: 15px;
+    z-index: 1;
+    margin-left: $margin-content;
+  }
+
+  &__title {
+    width: 286px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+
+    margin: 0;
+  }
+  
+  &__description {
+    width: 275px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.8;
+
+    margin: 0;
+  }
+}
+
+.phone {
+  margin: 30px auto;
+
+  width: 300px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 406px;
+    background: linear-gradient(to top, $background-color-bl, #00000000);
+    z-index: 1;
+  }
+}

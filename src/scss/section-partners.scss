@@ -1,0 +1,52 @@
+.partners {
+  @include flex-container;
+  flex-direction: column;
+  background-color: $background-color-dark;
+
+  &__content {
+    margin-top: 92px;
+    margin-left: $margin-content;
+  }
+
+  &__title {
+    width: 309px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  &__description {
+    width: 290px;
+    margin: 15px 0 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.8;
+  }
+
+  &__img {
+    padding-top: 10px;
+    margin-top: auto;
+    display: block;
+    position: relative;
+    align-self: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 22px;
+      width: 100%;
+      height: 260px;
+      background: linear-gradient(to top, $background-color-dark, #10101000);
+      z-index: 1;
+    }
+  }
+}
+
+.partners-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  height: 70vh;
+}

@@ -1,0 +1,129 @@
+.catalog-section {
+  @include flex-container;
+  background-color: $background-color-dark;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url(../../public/images/img/Group\ 2.png);
+    position: absolute;
+    background-size: cover;
+    flex-direction: column;
+  }
+
+  &__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: $margin-content;
+    z-index: 5;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border: 8px solid $accent-color;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to top, $background-color-bl, #00000000);
+    opacity: 0.83;
+    width: 100%;
+    height: 406px;
+    z-index: 1;
+    bottom: 0;
+  }
+}
+
+.overPay {
+  margin-top: 36px;
+
+  &__subtitile {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    line-height: 22.4px;
+    letter-spacing: 0.5px;
+  }
+
+  &__titile {
+    margin: 5px 0 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
+
+.catalog-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 109px;
+}
+
+.main-text {
+  margin-top: 109px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.96px;
+    width: 280px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    max-width: 240px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.5px;
+    margin: 10px 0 0;
+  }
+}
+
+.subscribe {
+  margin-top: auto;
+  margin-bottom: 70px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1px;
+
+    margin: 0 0 16px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.37px;
+    letter-spacing: 0.83px;
+
+    opacity: 0.6;
+    width: 157px;
+    margin: 12px 0 0;
+  }
+
+  &__link {
+    display: inline-block;
+
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13.13px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e5e5e5;
+
+    margin: 20px 0 0;
+  }
+}

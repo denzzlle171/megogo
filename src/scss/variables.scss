@@ -1,0 +1,17 @@
+// color
+$color-text:#fff;
+$background-color-dark:#101010;
+$background-color-bl:#000;
+$accent-color:#23c3b2;
+
+
+//size
+$margin-content: 50px;
+
+
+// mixin 
+@mixin flex-container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
